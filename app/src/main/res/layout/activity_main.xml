@@ -47,7 +47,7 @@
                     android:text="@string/initial_score"
                     android:textColor="@color/green_light"
                     android:textSize="@dimen/text_size_huge" />
-                
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
