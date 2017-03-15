@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/green_transp">
+        android:background="?android:colorBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                     android:gravity="center_horizontal"
                     android:padding="16dp"
                     android:text="@string/player1"
-                    android:textColor="@color/white"
+                    android:textColor="?android:textColorPrimary"
                     android:textSize="@dimen/text_size_h3"
                     android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
                     android:gravity="center_horizontal"
                     android:paddingBottom="24dp"
                     android:text="@string/initial_score"
-                    android:textColor="@color/green_light"
+                    android:textColor="?android:textColorSecondary"
                     android:textSize="@dimen/text_size_huge" />
 
                 <Button
@@ -144,8 +144,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
