@@ -85,10 +85,19 @@ public class MainActivity extends AppCompatActivity {
      * Reset the Score for both Teams.
      */
     public void resetScore(View view){
+        if (scoreTeamA == 0 && scoreTeamB == 0){
+            // Display a toast message
+            Toast.makeText(this, getResources().getString(R.string.lets_play), Toast.LENGTH_SHORT).show();
+            // Terminate the current method.
+            return;
+        }
+        // Initialize scores.
         scoreTeamA = 0;
         scoreTeamB = 0;
+        // Display the scores.
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        // Display a toast message
         Toast.makeText(this, getResources().getString(R.string.reset_score), Toast.LENGTH_SHORT).show();
     }
 
