@@ -14,6 +14,6 @@ Developed for the **Udacity** course **_"Android Development for Beginners by Go
 Useful Links
 --------------
 
-GitHub: [esigala1/BackgammonExtrasByESigala](https://github.com/esigala1/BackgammonExtras)
+GitHub: [esigala1/BackgammonExtrasByESigala](https://github.com/esigala1/BackgammonExtrasbyESigala)
 
 Udacity Course: [Android Basics - User Input](https://www.udacity.com/course/android-basics-user-input--ud836)
