@@ -6,5 +6,7 @@
     <string name="one_point">+1 Point</string>
     <string name="two_points">+2 Points\nGammon</string>
     <string name="three_points">+3 Points\nBackgammon</string>
+    <string name="reset">Reset</string>
     <string name="reset_score">Reset scores...\nLet\'s play again!</string>
+    <string name="lets_play">Let\'s play!!</string>
 </resources>
