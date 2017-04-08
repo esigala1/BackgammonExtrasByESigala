@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="16dp"
+                    android:padding="@dimen/space_large"
                     android:text="@string/player1"
                     android:textColor="?android:textColorPrimary"
                     android:textSize="@dimen/text_size_h3"
@@ -43,35 +43,35 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="24dp"
-                    android:text="@string/initial_score"
+                    android:paddingBottom="@dimen/space_huge"
+                    android:text="@string/score_value"
                     android:textColor="?android:textColorSecondary"
                     android:textSize="@dimen/text_size_huge" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addOneForPlayer1"
                     android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addTwoForPlayer1"
                     android:text="@string/two_points" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addThreeForPlayer1"
                     android:text="@string/three_points" />
 
@@ -79,9 +79,9 @@
 
             <!-- Vertical line -->
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/line_dimen"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/space_large"
                 android:background="@android:color/darker_gray" />
 
             <!-- Player 2 -->
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="16dp"
+                    android:padding="@dimen/space_large"
                     android:text="@string/player2"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_size_h3"
@@ -108,37 +108,38 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="24dp"
-                    android:text="@string/initial_score"
+                    android:paddingBottom="@dimen/space_huge"
+                    android:text="@string/score_value"
                     android:textColor="@color/green_light"
                     android:textSize="@dimen/text_size_huge" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addOneForPlayer2"
                     android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addTwoForPlayer2"
                     android:text="@string/two_points" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginLeft="@dimen/space_huge"
+                    android:layout_marginRight="@dimen/space_huge"
                     android:onClick="addThreeForPlayer2"
                     android:text="@string/three_points" />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -156,7 +157,7 @@
         <!-- Horizontal line -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/line_dimen"
             android:background="@color/colorPrimary" />
 
         <Button
@@ -164,12 +165,12 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:onClick="resetScore"
-            android:paddingBottom="15dp"
-            android:paddingLeft="65dp"
-            android:paddingRight="65dp"
-            android:paddingTop="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:paddingBottom="@dimen/space_button_small"
+            android:paddingLeft="@dimen/space_button_large"
+            android:paddingRight="@dimen/space_button_large"
+            android:paddingTop="@dimen/space_button_small"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_marginBottom="@dimen/space_medium"
             android:text="@string/reset"
             android:textStyle="bold" />
     </LinearLayout>
