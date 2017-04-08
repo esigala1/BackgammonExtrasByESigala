@@ -2,19 +2,53 @@ package net.bplaced.esigala1.backgammonextras;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA = 0;
-    int scoreTeamB = 0;
+    public static final String SCORE_A = "score_a";
+    public static final String SCORE_B = "score_b";
+    public static final String TAG_INFO = "Backgammon";
+
+    int scoreTeamA, scoreTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // If there is no saved state, then...
+        if (savedInstanceState == null) {
+            // Initialize both scores to zero.
+            scoreTeamA = 0;
+            scoreTeamB = 0;
+        }
+        // There is a saved state, so restore it...
+        else
+        {
+            scoreTeamA = savedInstanceState.getInt(SCORE_A);
+            scoreTeamB = savedInstanceState.getInt(SCORE_B);
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Log.i(TAG_INFO, "onSaveInstanceState()");
+        super.onSaveInstanceState(outState);
+        outState.putInt(SCORE_A, scoreTeamA);
+        outState.putInt(SCORE_B, scoreTeamB);
+    }
+
+    @Override
+    protected void onResume() {
+        Log.i(TAG_INFO, "onResume()");
+        super.onResume();
+        // Display score.
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 
     /**
