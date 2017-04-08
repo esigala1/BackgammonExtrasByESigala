@@ -34,7 +34,7 @@
                     android:padding="@dimen/space_large"
                     android:text="@string/player1"
                     android:textColor="?android:textColorPrimary"
-                    android:textSize="@dimen/text_size_h3"
+                    android:textSize="@dimen/text_size_h2"
                     android:textStyle="bold" />
 
                 <TextView
@@ -49,29 +49,18 @@
                     android:textSize="@dimen/text_size_huge" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+
+                    style="@style/ButtonScore"
                     android:onClick="addOneForPlayer1"
                     android:text="@string/one_point" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+                    style="@style/ButtonScore"
                     android:onClick="addTwoForPlayer1"
                     android:text="@string/two_points" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+                    style="@style/ButtonScore"
                     android:onClick="addThreeForPlayer1"
                     android:text="@string/three_points" />
 
@@ -99,7 +88,7 @@
                     android:padding="@dimen/space_large"
                     android:text="@string/player2"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/text_size_h3"
+                    android:textSize="@dimen/text_size_h2"
                     android:textStyle="bold" />
 
                 <TextView
@@ -114,29 +103,17 @@
                     android:textSize="@dimen/text_size_huge" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+                    style="@style/ButtonScore"
                     android:onClick="addOneForPlayer2"
                     android:text="@string/one_point" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+                    style="@style/ButtonScore"
                     android:onClick="addTwoForPlayer2"
                     android:text="@string/two_points" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/button_height"
-                    android:layout_marginBottom="@dimen/space_small"
-                    android:layout_marginLeft="@dimen/space_huge"
-                    android:layout_marginRight="@dimen/space_huge"
+                    style="@style/ButtonScore"
                     android:onClick="addThreeForPlayer2"
                     android:text="@string/three_points" />
 

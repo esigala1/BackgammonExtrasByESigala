@@ -4,39 +4,11 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#50ff40</color>
     <color name="colorButtonNormal">#586358</color>
+    <color name="colorButtonScore">#a5cfa5</color>
 
     <color name="black_transp">#af000000</color>
     <color name="green_transp">#cc070e07</color>
     <color name="green_light">#36c732</color>
-
-
-
-
-    <color name="transparent">#00000000</color>
-    <color name="black">#000000</color>
-    <color name="black_dark">#313031</color>
-    <color name="gray">#838383</color>
-    <color name="gray_light">#d9d9d9</color>
     <color name="white">#ffffff</color>
-    <color name="purple">#9e279e</color>
-    <color name="purple_dark">#360542</color>
-    <color name="fuchsia">#dd1da7</color>
-    <color name="lime">#adff40</color>
-
-
-    <color name="blue">#ff1379c5</color>
-    <color name="blue_light_sky">#87cefa</color>
-    <color name="blue_dodger">#1e90ff</color>
-
-    <color name="brown">#a52a2a</color>
-    <color name="brown_saddle">#8b4513</color>
-    <color name="peru">#ffa96625</color>
-    <color name="burlywood">#deb887</color>
-
-    <color name="purple_light">#ffaa66cc</color>
-    <color name="green">#0f9918</color>
-    <color name="red_dark">#630c0c</color>
-
-    <color name="cyan">#00ffff</color>
 
 </resources>
