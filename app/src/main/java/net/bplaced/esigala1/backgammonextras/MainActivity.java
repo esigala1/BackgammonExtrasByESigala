@@ -7,13 +7,17 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * The "MainActivity" class is the entry point of the program.
+ */
 public class MainActivity extends AppCompatActivity {
 
     public static final String SCORE_A = "score_a";
     public static final String SCORE_B = "score_b";
     public static final String TAG_INFO = "Backgammon";
 
-    int scoreTeamA, scoreTeamB;
+    int scoreTeamA;  // Keep score for Team A
+    int scoreTeamB;  // Keep score for Team B
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,5 +138,4 @@ public class MainActivity extends AppCompatActivity {
         // Display a toast message
         Toast.makeText(this, getResources().getString(R.string.reset_score), Toast.LENGTH_SHORT).show();
     }
-
 }
